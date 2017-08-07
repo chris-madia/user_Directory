@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User</title>
+    <link rel="stylesheet" href="/public/styles.css">
+  </head>
+  <body>
+    <section class="secondWrapper">
+          <img class="user" src="{{avatar}}" alt="">
+            <h1>{{name}}</h1>
+            {{#address.city}}
+              <p>{{address.city}}, {{address.country }}</p>
+            {{/address.city}}
+            {{^address.city}}
+              <p>{{address.country }}</p>
+            {{/address.city}}
+            {{#job}}
+              <p>{{job}} {{company}}</p>
+              <p>{{email}} {{phone}}</p>
+            {{/job}}
+            {{^job}}
+              <p class= "unemployed">Available for hire</p>
+              <p>{{email}} {{phone}}</p>
+            {{/job}}
+          <div class="three">
+            {{#university}}
+              <p>Education {{university}}</p>
+            {{/university}}
+            <p>Skills</p>
+              {{#skills}}
+                {{.}}
+              {{/skills}}
+    </section>
+  </body>
+</html>
