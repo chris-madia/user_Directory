@@ -30,9 +30,7 @@ h3 {
 }
 
 .secondWrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: block;
 }
 
 .user {
