@@ -7,7 +7,7 @@ app.engine('mustache', mustacheExpress());
 app.set('views', './views');
 app.set('view engine', 'mustache');
 
-app.use('/public', express.static('public'));
+app.use('/Public', express.static('public'));
 
 app.get('/', function(req, res){
   res.render('profile', data)

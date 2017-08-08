@@ -5,6 +5,8 @@
 }
 
 .employees {
+	display: grid;
+	grid-column: auto;
 	border: 1px solid black;
 	width: 200px;
 	padding: 20px;
